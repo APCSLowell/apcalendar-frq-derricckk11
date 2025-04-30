@@ -68,11 +68,11 @@ public class APCalendar
 
     int start = firstDayOfYear(year);
 
-    int daysSince = dayOfyear(month, day, year);
+    int daysSince = dayOfYear(month, day, year);
 
     int important = (daysSince - 1 ) % 7; 
 
-    int dayOf = start += important;
+    int dayOf = start + important;
 
     if(dayOf >= 7) {
 
